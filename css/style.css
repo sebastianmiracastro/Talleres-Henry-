@@ -16,8 +16,8 @@
 }
 .menu {
     position: absolute;
-    top: 20%;
-    left: 70%;
+    top: 10%;
+    left: 65%;
     transform: translate(-50%, -50%);
 }
 .menu li{
@@ -37,7 +37,7 @@
 }
 .logo{
     float: none;
-    padding: 5%;
+    padding: 4%;
 }
 .iphone{
     padding-left: 8%;
@@ -46,9 +46,10 @@
     font-size: 119%;
     color: #fff;
     position: absolute;
-    top: 73%;
+    top: 45%;
     left: 65%;
     transform: translate(-50%, -50%);
+
 }
 .texto h1{
     font-size: 250%;
@@ -77,6 +78,10 @@
     left: 90%;
     transform: translate(-50%, -50%);
 }
+.as{
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+}
 .padrelogo{
     background-color: #e7e3e3;
     display: grid;
@@ -86,17 +91,15 @@
     width: 95%;
     padding-left: 5%;
 }
-.logo{
+.logosa{
     display: flex;
     align-items: center;
+
 }
-/*.logo img:hover{
-    border-radius:50%;
-    box-shadow: 0px 0px 15px 15px #3d93d1;
-    -webkit-box-shadow: 0px 0px 15px 15px #3d93d1;
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-}*/
+.logosa:hover{
+    transform: scale(1.2);
+
+}
 .padrelogo1{
     display: grid;
     grid: 1fr / 1fr 1fr 1fr ;
@@ -218,4 +221,119 @@ hr{
 }
 .final3{
     padding-left: 5%;
+}
+@media screen and (max-width: 768px) {
+    .texto{
+        text-align: center;
+        font-size: 59%;
+        color: #fff;
+        position: absolute;
+        top: 45%;
+        left: 85%;
+        transform: translate(-50%, -50%);
+    }
+    .iphone{
+        padding: 0.2rem;
+    }
+    .logo{
+        float: none;
+        left: 10%;
+    }
+    .menu{
+        top:95px ;
+        left: 290px ;
+    }
+    .texto{
+        font-size: 80%;
+        color: #fff;
+        top: 46%;
+        left: 75%;
+    }
+    .final1{
+        display: grid;
+        grid-template-columns: 100px 40px;
+    }
+    .final1 p{
+        font-size: 13px;
+    }
+    .final p{
+        grid-column: 3;
+        margin-top: 4%;
+    }
+    .final{
+        display: grid;
+        grid-template-columns: 300px 130px;
+    }
+    .link p{
+        font-size: 13px;
+    }
+    .final3 .ima{
+        padding-left: 81%;
+    }
+    .boton1{
+
+    }
+    .boton p{
+        width: 100%;
+        position: absolute;
+        top: 91%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+    }
+    .boton .boton1{
+        position: absolute;
+        background-color: #3d93d1;
+        color: #fff;
+        text-decoration: none;
+        padding-top:8px;
+        padding-right: 1px;
+        padding-left: 1px;
+        padding-bottom: 10px;
+        border-radius: 30px;
+        transform: translate(-110%, -85%);
+    }
+    @media screen and (max-width: 576px){
+        .imgip{
+            width: 280px;
+            padding-top:30px ;
+        }
+        .menu{
+            top: 90px ;
+            left: 200px ;
+        }
+        .texto{
+            font-size: 68%;
+            color: #fff;
+            top: 40%;
+            left: 73%;
+        }
+        .boton .boton1{
+            background-color: #3d93d1;
+            color: #fff;
+            text-decoration: none;
+            padding-top:1px;
+            padding-right: 1px;
+            padding-left: 1px;
+            padding-bottom: 1px;
+            border-radius: 30px;
+            transform: translate(-110%, -85%);
+        }
+        .boton p{
+            width: 100%;
+            position: absolute;
+            top: 91%;
+            left: 90%;
+            transform: translate(-50%, -50%);
+        }
+        .padrelogo1{
+            display: grid;
+            grid: 1fr / 1fr 1fr 1fr ;
+            grid-gap: 4%;
+            height: 5%;
+            width: 93%;
+        }
+        .final3 .ima{
+            padding-left: 74%;
+        }
+    }
 }
